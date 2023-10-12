@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="inputCity" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button id="submit" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            
+            <img id="weatherIcon"></img>
+            <h3 id="weatherText"></h3>
+            <h1 id="cityName"></h1>
+            <h3><span id="temp_c"></span>&deg;C</h3>
+            
+            <h1 class="lead">Clouds</h1>
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Information</h4>
+                </div>
+                <div class="card-body">
+                  
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li id="continent"></li>
+                    <li >Country: <span id="country"></span></li>
+                    <li id="localTime"></li>
+                    <li></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+    </div>
+<script src="main.js"></script>
+</body>
+
+</html>
